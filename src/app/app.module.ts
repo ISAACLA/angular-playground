@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersModule } from './users/users.module';
-import { TempMainComponent } from './temp-main/temp-main.component';
-import { UsersState } from './users/state/users.state';
 import { NgxsModule } from '@ngxs/store';
 import { AlbumsModule } from './albums/albums.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,7 +15,7 @@ import { TodosModule } from './todos/todos.module';
 import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, TempMainComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

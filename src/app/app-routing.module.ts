@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TempMainComponent } from './temp-main/temp-main.component';
 import { UsersModule } from './users/users.module';
 import { AlbumsModule } from './albums/albums.module';
 import { PostsModule } from './posts/posts.module';
 import { TodosModule } from './todos/todos.module';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: TempMainComponent,
-  },
+  // {
+  //   path: '',
+  //   component: ,
+  // },
   {
     path: 'users',
     loadChildren: () => UsersModule,
