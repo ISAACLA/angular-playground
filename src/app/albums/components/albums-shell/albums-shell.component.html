@@ -1,0 +1,9 @@
+<div class="albums-shell">
+  <div class="albums-shell__title">
+    <h2 class="text-center">Album Page</h2>
+  </div>
+
+  <div class="albums-shell__list" *ngIf="albums$ | async as albums">
+    <app-albums-list [albums]="albums"></app-albums-list>
+  </div>
+</div>

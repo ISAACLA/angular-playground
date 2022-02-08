@@ -1,0 +1,5 @@
+<div *ngIf="photos$ | async as photos">
+  <ul>
+    <li *ngFor="let photo of photos">{{photo.title}}</li>
+  </ul>
+</div>
