@@ -1,30 +1,40 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
+    "watch": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
     "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2020",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"],
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
     "importHelpers": true,
-    "target": "es2017",
-    "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "module": "es2020"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "paths": {
+//    "@tb/admin-portal/shared/dto": ["./src/app/shared/dto"],
+//    "@tb/admin-portal/shared/constant": ["./src/app/shared/constant"],
+//    "@tb/admin-portal/shared/helper": ["./src/app/shared/helper"],
+//    "@tb/admin-portal/shared/service": ["./src/app/shared/service"],
+//    "@tb/admin-portal/shared/state": ["./src/app/shared/state"],
+//    "@tb/admin-portal/shared/ui": ["./src/app/shared/ui"],
   }
 }
