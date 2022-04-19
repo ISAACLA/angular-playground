@@ -6,12 +6,17 @@ import { AlbumsModule } from './albums/albums.module';
 import { PostsModule } from './posts/posts.module';
 import { TodosModule } from './todos/todos.module';
 import { AppComponent } from './app.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 const routes: Routes = [
   // {
   //   path: '',
   //   component: ,
   // },
+  {
+    path: '',
+    loadChildren: () => DashboardModule,
+  },
   {
     path: 'users',
     loadChildren: () => UsersModule,

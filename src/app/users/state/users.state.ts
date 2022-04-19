@@ -49,6 +49,8 @@ export class UsersState {
     return this.usersService.users().pipe(
       tap((response: User[]) => {
         console.log('response: ', response);
+        const cities = response.map((u) => u.company.name);
+        console.log('here: ', cities);
         ctx.patchState({
           users: response,
           loading: false,
